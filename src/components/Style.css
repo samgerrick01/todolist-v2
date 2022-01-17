@@ -1,0 +1,110 @@
+/* ALL  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+/* PAGE BACKGROUND  */
+.body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgba(48, 16, 255, 1) 0%,
+    rgba(100, 115, 255, 1) 100%
+  );
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* PAGE FLOATING CONTAINER  */
+.container {
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  flex-direction: column;
+  width: 520px;
+  min-height: 600px;
+  background: #161a2b;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  box-shadow: 0 0px 75px rgb(65, 65, 65);
+}
+.container h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+.container .header {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.container .header input {
+  width: 300px;
+  height: 30px;
+  font-size: 25px;
+}
+.container .header button {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+  display: list-item;
+  float: left;
+  height: 350px;
+  overflow-y: auto;
+  margin-top: 30px;
+}
+li {
+  border: 2px solid black;
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 1.7em;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 118, 20, 1) 0%,
+    rgba(255, 84, 17, 1) 100%
+  );
+  padding: 16px;
+  border-radius: 5px;
+}
+li:hover {
+  box-shadow: 0 0px 32px rgb(255, 0, 0);
+  transition: 0.3s all ease-in-out;
+}
+li:nth-child(4n + 1) {
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+}
+li:nth-child(4n + 2) {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 12, 241, 1) 0%,
+    rgba(250, 0, 135, 1) 100%
+  );
+}
+li:nth-child(4n + 3) {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+}
+.list__btn {
+  cursor: pointer;
+}
